@@ -28,7 +28,7 @@ pipeline {
            
            stage('upload to server') {
                   steps {
-                          sh 'cp index.html /var/www/html'
+                          sh 'sudo cp index.html /var/www/html'
                         }
               }
               
