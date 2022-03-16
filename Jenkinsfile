@@ -1,7 +1,3 @@
-// This is a pipeline for Jenkins (launched on aws ec2 ubuntu instance) to fetch php code from Github and then transfer it to the
-// Apache2 /var/www/html directory (deployment)onto the another aws ec2 ubuntu instance.
-
-
 
 pipeline {
     agent any
