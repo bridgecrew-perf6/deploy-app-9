@@ -25,6 +25,12 @@ pipeline {
                           sh 'ls -a'
                         }
               }
+           
+           stage('upload to server') {
+                  steps {
+                          sh 'cp index.html /var/www/html'
+                        }
+              }
               
               stage('transfer artifacts') {
                     steps {
