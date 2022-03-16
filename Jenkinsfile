@@ -19,6 +19,12 @@ pipeline {
                           archiveArtifacts '**/*.html'
                         }
               }
+           
+           stage('test') {
+                  steps {
+                          sh 'ls -a'
+                        }
+              }
               
               stage('transfer artifacts') {
                     steps {
