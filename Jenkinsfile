@@ -24,7 +24,7 @@ pipeline {
                   steps {
                           sh 'whoami'
                           sh 'ls -a'
-                          sh 'sudo chown -R jenkins:root /var/www/ '
+                         
                         }
               }
            
