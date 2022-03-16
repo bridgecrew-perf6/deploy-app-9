@@ -33,11 +33,6 @@ pipeline {
                           sh 'cp index.html /var/www/html'
                         }
               }
-              
-              stage('transfer artifacts') {
-                    steps {
-                          sshPublisher(publishers: [sshPublisherDesc(configName: 'MyApacheInstance', transfers: [sshTransfer(excludes: '', execCommand: '', execTimeout: 120000, flatten: true, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '/var/www/html', remoteDirectorySDF: false, removePrefix: '', sourceFiles: '**/*.html')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: true)])
-                          }
-              }
+             
        }
 }
